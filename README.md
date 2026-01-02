@@ -55,7 +55,7 @@ The **DAO (Data Access Object) layer** is responsible for managing all interacti
 
 All DAO classes are located under:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   src/main/java/com/rideapp/dao   `
+`   src/main/java/com/rideapp/dao   `
 
 ### **JPAUtil.java**
 
