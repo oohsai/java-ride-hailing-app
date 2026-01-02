@@ -46,3 +46,55 @@ To configure the database connection, you must update the `persistence.xml` file
 Mapped Java classes to database tables:
 - **User.java**: Handles user information and roles (`rider`/`driver`).
 - **Ride.java**: Manages ride details, locations, and status.
+
+
+🧩 DAO Layer (Data Access Objects)
+----------------------------------
+
+The **DAO (Data Access Object) layer** is responsible for managing all interactions with the database.It provides a clean separation between the **domain (entity) layer** and the persistence logic by using **JPA (Hibernate)**.
+
+All DAO classes are located under:
+
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   src/main/java/com/rideapp/dao   `
+
+### **JPAUtil.java**
+
+A utility class that provides a centralized way to create and manage EntityManager instances.
+
+**Purpose:**
+
+*   Initializes a single EntityManagerFactory
+    
+*   Supplies EntityManager objects to DAO classes
+    
+*   Prevents repeated configuration code across DAOs
+    
+
+### **UserDAO.java**
+
+Handles all database-related operations for the **User** entity.
+
+**Responsibilities:**
+
+*   Create and store user records
+    
+*   Retrieve user information from the database
+    
+*   Update existing user details
+    
+*   Remove user records when required
+    
+
+### **RideDAO.java**
+
+Handles all database-related operations for the **Ride** entity.
+
+**Responsibilities:**
+
+*   Persist new ride details
+    
+*   Update ride status during lifecycle changes
+    
+*   Fetch ride information and history
+    
+*   Manage ride-related database transactions
